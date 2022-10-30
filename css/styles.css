@@ -1,0 +1,217 @@
+/*Globales*/
+html {
+    font-size: 62.5%; /*PX to REM*/
+}
+body {
+    font-size: 16px;/*PX to REM*/
+    background-color: #142335;
+}
+
+
+/**********/
+
+/******Landing** **/
+/*Barra*/
+.navbar {
+    background-color: #142335!important;
+    border-bottom: .1rem solid #403e4e;
+}
+.navbar-nav {
+    column-gap: 5rem;
+}
+.navbar-img {
+    width: 16rem;
+}
+.container-fluid {
+    margin: 0 4rem;
+}
+
+/** Hero**/
+.hero {
+    background-image: url(../img/Hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 400px; */
+    height: 85rem;
+    margin-top: 3.9rem;
+    display: grid;
+    align-items: center;
+}
+.hero__text {
+    display: grid;
+    justify-items: center;
+}
+.btn-outline-info {
+    width: 20rem;
+    font-size: 1.5rem;
+}
+.purple-strong {
+    color: #6f42c1;
+}
+
+/**** About me**/
+
+/*Resume*/
+#aboutMe {
+    padding-top: 7.5rem;
+}
+.resume__box {
+    display: flex;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 100rem;
+    background-color: #1c1e22;
+    border-radius: 2rem;
+}
+.resume__box--image {
+    background-image: url(../img/Profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30rem;
+    height: 35rem;
+}
+.resume__box--text {
+    margin-left: 2rem;
+}
+.resume__box--text h1 {
+    margin-bottom: 4rem;
+}
+
+/*Skills*/
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.skills .card {
+    background-color: #1c1e22;
+    border-radius: 2rem;
+}
+.stack__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+.stack__title {
+    margin-top: 2rem;
+}
+.stack__list p {
+    font-size: 9rem;
+}
+
+
+/*AboutMe Responsive*/
+/*Mobile*/
+@media only screen and (max-width: 480px) {
+    /*Resume*/
+    .resume__box {
+        display: block;
+        width: 100%;
+    }
+    .resume__box--image {
+        margin: 0 auto;
+    }
+
+    /*Skilss*/
+    .skills {
+        display: block;
+    }
+    .skills .card {
+        margin: 2rem 0;
+    }
+
+    /*Stack*/
+    .stack__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+}
+
+/*Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .stack__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+/*************/
+/*Projects*/
+#projects {
+    padding-top: 8.5rem;
+}
+.btn-project {
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+}
+.project__item {
+    margin-bottom: 3rem;
+}
+.project__item--img {
+    width: 100%;
+    height: 40rem;
+    margin: 0 auto;
+}
+.modal-content {
+    background-color: #142335;
+}
+.modal-img {
+    width: 20rem;
+}
+/*Botones Modal*/
+.btn-purple {
+    background-color: #6f42c1;
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+.btn-purple:hover {
+    background-color: #ffffff;
+    color: #6f42c1;
+}
+.modal-footer .btn-secondary {
+    font-size: 1.6rem;
+}
+
+/*Contact*/
+#contact {
+    padding-top: 4.5rem;
+}
+.contact__links {
+    width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.contact__links--item {
+    margin: 0 2rem;
+}
+.fa-whatsapp-square {
+    font-size: 10rem;
+    color: green;
+}
+.fa-linkedin {
+    font-size: 10rem;
+}
+
+/*Footer*/
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: .1rem solid #403e4e;
+}
+.footer__phrase {
+    text-align: right;
+}
+.footer__phrase--img {
+    width: 10rem;
+}
+.footer-link {
+    text-decoration: none;
+    color: #ffffff;
+}
