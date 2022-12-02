@@ -21,7 +21,8 @@ $(".home").click(function () {
   $(".projects").removeClass("active");
   $(".contact").removeClass("active");
 
-  //Animation
+  //Hide Navbar Mobile
+  $(".navbar-collapse").removeClass("show");
 });
 $(".about").click(function () {
   //Active class add and remove
@@ -64,6 +65,9 @@ $(".projects").click(function () {
   $(".btn-project").addClass(
     "animate__animated animate__flipInX animate__delay-2s"
   );
+
+  //Hide Navbar Mobile
+  $(".navbar-collapse").removeClass("show");
 });
 $(".contact").click(function () {
   //Active class add and remove
@@ -79,4 +83,7 @@ $(".contact").click(function () {
   $(".contact__title").addClass(
     "animate__animated animate__fadeInUp animate__delay-2s"
   );
+
+  //Hide Navbar Mobile
+  $(".navbar-collapse").removeClass("show");
 });
