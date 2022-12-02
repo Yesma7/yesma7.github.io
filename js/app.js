@@ -55,17 +55,6 @@ $(".projects").click(function () {
   $(".about").removeClass("active");
   $(".contact").removeClass("active");
 
-  //Animation
-  $("#projects").addClass(
-    "animate__animated animate__fadeInUp animate__delay-1s"
-  );
-  $(".projects__title").addClass(
-    "animate__animated animate__fadeInUp animate__delay-1s"
-  );
-  $(".btn-project").addClass(
-    "animate__animated animate__flipInX animate__delay-2s"
-  );
-
   //Hide Navbar Mobile
   $(".navbar-collapse").removeClass("show");
 });
